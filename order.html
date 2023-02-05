@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Order</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="home.html"><img src="dockart.png" alt="image" height="80px" width="80px" ></a>
+    
+    <nav>
+      <ul >
+        <li><a href="login.html">Login</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="order.html">Order</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Items in your cart</h2>
+    <p>One can remove document from cart, we will calculate total amount dynamically</p>
+    <form action="payment.html">
+      <table id="cart">
+        <tr>
+          <th>Document ID</th>
+          <th>Document Name</th>
+          <th>Price</th>
+          <th>remove</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>WT NOTES</td>
+          <td>$5.00</td>
+          
+        </tr>
+        <tr>
+          <td>2</td>
+          <td> DT NOTES</td>
+          <td>$3.00</td>
+        </tr>
+      </table>
+
+      <br><br>
+       <br><br>
+      <label for="total">Total:</label>
+      <input type="text" id="total" name="total" value="" disabled>
+      <br><br>
+      <input type="submit" value="Place Order">
+    </form>
+  </main>
+  <footer>
+    <p>Copyright © Dockart</p>
+  </footer>
+  <script src="scriptord.js"></script>
+</body>
+</html>
